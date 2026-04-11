@@ -113,8 +113,8 @@ table {
 }
 
 th{
-    background-color: #A1E3D8;
-    color: #1a1a1a;
+    background-color: #1a1a1a;
+    color: #333;
     padding: 15px;
     text-transform: uppercase;
 }
@@ -139,4 +139,74 @@ p{
     color: #ccc;
     line-height: 1.6;
     margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery-item {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    border: 1px solid #333;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+    border-color: #A1E3D8;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; 
+    display: block;
+}
+
+.item-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #A1E3D8;
+}
+
+.item-info p {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin: 5px 0 0;
+}
+
+form {
+    max-width: 600px;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+label {
+    display: block;
+    color: #A1E3D8;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #2a2a2a;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+}
+
+.radio-group {
+    margin-bottom: 10px;
+    color: white;
 }
