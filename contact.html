@@ -3,30 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elite Builds | Home</title>
-    <link rel="icon" href="Logo.png">
+    <title>Elite Builds | Contact Us</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
+<body class="contact-page">
     <nav class="navbar">
     <div class="nav-container">
         <div class="logo">
-            <img src="Logo.png" alt="Elite Builds Logo"> # Ensure this filename is correct
-        </div>
-
+            <img src="Logowhite-nobg.png" alt="Logo">
+            <span class="company-name">ELITE <span class="highlight">BUILDS</span></span>
+        </div> 
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="builds.html">Builds</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="build.html">Builds</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="contact.html" class="active">Contacts</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
-
-        <div class="nav-search">
-            <input type="text" placeholder="Search Component..." class="search-bar">
-        </div>
     </div>
 </nav>
+
+    <main class="center-main">
+        <div class="contact-box">
+            <h2>GET IN <span class="highlight">TOUCH</span></h2>
+            <p>Have a custom build in mind? Let's talk hardware.</p>
+            
+            <form id="contactForm">
+                <table class="form-table">
+                    <tr>
+                        <td><label for="name">Full Name:</label></td>
+                        <td><input type="text" id="name" placeholder="Required.."></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" placeholder="example@email.com"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subject">Subject:</label></td>
+                        <td>
+                            <select id="subject">
+                                <option value="build">Custom PC Build</option>
+                                <option value="parts">Component Sourcing</option>
+                                <option value="other">General Inquiry</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: top;"><label for="message">Message:</label></td>
+                        <td><textarea id="message" rows="4" placeholder="Tell me about your dream rig..."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit" class="btn-primary">Send Message</button></td>
+                    </tr>
+                </table>
+            </form>
+            <div id="error-message" style="color: #ff4d4d; margin-top: 15px; font-size: 0.9rem;"></div>
+        </div>
+    </main>
+<div class="footer-section">
+            <h4><b>Contact Info</b></h4>
+            <p>Putalisadak, Kathmandu, Nepal</p>
+            <p>Email: pujjwal25@tbc.edu.np</p>
+            <p>Phone: 9840028724</p>
+        </div>
+    <script>
+      
+
+    var contactForm = document.getElementById('contactForm');
+    var statusBox = document.getElementById('error-message');
+
+
+    contactForm.onsubmit = function(event) {
+        
+        event.preventDefault();
+
+      
+        var nameField = document.getElementById('name');
+        var emailField = document.getElementById('email');
+        var messageField = document.getElementById('message');
+
+        
+        nameField.style.backgroundColor = "#1a1c20";
+        emailField.style.backgroundColor = "#1a1c20";
+        messageField.style.backgroundColor = "#1a1c20";
+        statusBox.textContent = "";
+
+        var isValid = true;
+
+       
+        if (nameField.value.trim() === "") {
+            nameField.style.borderColor = "red";
+            isValid = false;
+        }
+
+
+        if (emailField.value.trim() === "") {
+            emailField.style.borderColor = "red";
+            isValid = false;
+        }
+
+  
+        if (messageField.value.trim().length < 10) {
+            messageField.style.borderColor = "red";
+            statusBox.textContent = "Message must be at least 10 characters.";
+            isValid = false;
+        }
+
+      
+        if (isValid === true) {
+            alert("Form submitted successfully!");
+            contactForm.reset(); 
+            
+            
+            nameField.style.borderColor = "#1a1c20";
+            emailField.style.borderColor = "#1a1c20";
+            messageField.style.borderColor = "#1a1c20";
+        }
+    };
+</script>
+
+
 </body>
 </html>

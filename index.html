@@ -11,25 +11,22 @@
 
 <body>
 
+    <body class="contact-page">
     <nav class="navbar">
-    <div class="nav-container">
-        <div class="logo">
-            <img src="Logowhite-nobg.png" alt="Elite Builds Logo">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="Logowhite-nobg.png" alt="Logo">
+                <span class="company-name">ELITE <span class="highlight">BUILDS</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="build.html">Builds</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" >Contacts</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
         </div>
-
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="build.html">Builds</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contacts</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-
-        <div class="nav-search">
-            <input type="text" placeholder="Search Component..." class="search-bar">
-        </div>
-    </div>
-</nav>
+    </nav>
 
 <header class="hero" id="hero-slider">
     <div class="hero-content">
@@ -37,11 +34,11 @@
         <p>Your ultimate destination for PC building and components.</p>
         <div class="hero-btns">
             <button class="btn-primary">View Builds</button>
-            <button class="btn-secondary">Shop Parts</button>
+            <a href="#parts-section" class="btn-secondary">Shop Parts</a>
         </div>
     </div>
 
-    <div class="hero-pagination">
+    <div class="hero-page">
         <span class="dot active" onclick="currentSlide(0)"></span>
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
@@ -62,15 +59,17 @@
                 ensuring your setup remains as cool as it is capable. Build a machine 
                 that reflects your ambition with hardware designed for the elite.
             </p>
-            <button class="btn-primary">Learn More</button>
+            <a href="about.html"><button class="btn-primary">Learn More</button></a>
         </div>
     </div>
 </section>
 
 <section class="components-section">
     <div class="container">
+        <section class="components-section" id="parts-section">
         <h2 class="section-header">Explore <span class="highlight">Elite Components</span></h2>
         <div class="header-underline"></div>
+        </section>
 
         <div class="components-grid">
             <div class="component-card">
@@ -114,7 +113,12 @@
 
 
 
-
+<div class="footer-section">
+            <h4><b>Contact Info</b></h4>
+            <p>Putalisadak, Kathmandu, Nepal</p>
+            <p>Email: pujjwal25@tbc.edu.np</p>
+            <p>Phone: 9840028724</p>
+        </div>
 
 
 
@@ -146,7 +150,6 @@
             currentIndex = (currentIndex + 1) % images.length;
             updateSlider(currentIndex);
         }, 8000);
-
     </script>
 </body>
 </html>

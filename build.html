@@ -3,30 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elite Builds | Home</title>
-    <link rel="icon" href="Logo.png">
+    <title>Elite Builds | Our Rigs</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav class="navbar">
-    <div class="nav-container">
-        <div class="logo">
-            <img src="Logo.png" alt="Elite Builds Logo"> # Ensure this filename is correct
+    <header>
+          <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="Logowhite-nobg.png" alt="Logo">
+                <span class="company-name">ELITE <span class="highlight">BUILDS</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="build.html" class="active">Builds</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
         </div>
+    </nav>
+    </header>
 
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="builds.html">Builds</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contacts</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
+    <main class="builds-container">
+        <div class="builds-grid">
+            <div class="build-card">
+                <div class="build-badge">Bestseller</div>
+                <img src="pc.jpg" alt="Neon Pulse Build" class="build-thumb">
+                <div class="build-info">
+                    <h3>NEON PULSE v1.2</h3>
+                    <ul class="spec-list">
+                        <li><strong>CPU:</strong> Core i9-14900K</li>
+                        <li><strong>GPU:</strong> RTX 4090 24GB</li>
+                        <li><strong>RAM:</strong> 64GB DDR5 6000MHz</li>
+                    </ul>
+                    <div class="price-action">
+                        <span class="price">NRP 425,000</span>
+                        <button class="btn-buy">Configure</button>
+                    </div>
+                </div>
+            </div>
 
-        <div class="nav-search">
-            <input type="text" placeholder="Search Component..." class="search-bar">
+            <div class="build-card">
+                <img src="pc2.jpg" alt="Dark Matter Build" class="build-thumb">
+                <div class="build-info">
+                    <h3>DARK MATTER</h3>
+                    <ul class="spec-list">
+                        <li><strong>CPU:</strong> Ryzen 9 7950X3D</li>
+                        <li><strong>GPU:</strong> RTX 4080 Super</li>
+                        <li><strong>RAM:</strong> 32GB DDR5</li>
+                    </ul>
+                    <div class="price-action">
+                        <span class="price">NRP 315,000</span>
+                        <button class="btn-buy">Configure</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</nav>
-</body>
+    </main>
+<div class="footer-section">
+            <h4><b>Contact Info</b></h4>
+            <p>Putalisadak, Kathmandu, Nepal</p>
+            <p>Email: pujjwal25@tbc.edu.np</p>
+            <p>Phone: 9840028724</p>
+        </div>
+    </body>
 </html>
