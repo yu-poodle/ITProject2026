@@ -19,7 +19,9 @@ body {
     z-index: 9999;  
     top: 0;
     width: 100%;
+
       }
+
 
 .nav-container {
     max-width: 1200px; 
@@ -59,7 +61,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: #aaa;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -70,11 +72,12 @@ body {
 .nav-links a:hover, 
 .nav-links a.active {
     color: #98FFED; 
+    font-weight: 700;
 }
 /* this marks the end of nav bar and start of the hero section */
 
 .hero {
-   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('pc.jpg');
+   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('Assests/pc2.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -102,21 +105,8 @@ body {
     color: #ccc;
 }
 
-.hero-page {
-    position: absolute;
-    bottom: 30px; 
-    left: 0;           
-    right: 0;          
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 12px;
-    pointer-events: none; 
-}
 
-.hero-page .dot {
-    pointer-events: auto; 
-}
+
 
 .hero-btns {
     margin-top: 30px;
@@ -578,4 +568,74 @@ input:focus, select:focus, textarea:focus {
 
 .contact-box p{
     color: white;
+}
+/* Beginning of parts.html*/
+.parts-section {
+    padding: 60px 80px;
+    background: #0d0d0d;
+    color: white;
+    text-align: center;
+}
+
+.parts-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.parts-slider {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.part-card {
+    min-width: 250px;
+    height: 300px;
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 20px;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.part-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+.part-card:hover {
+    transform: scale(1.05);
+    background: #222;
+}
+
+
+.slider-btn {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: #7ae6d2;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+.left {
+    left: -20px;
+}
+
+.right {
+    right: -20px;
 }

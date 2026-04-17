@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteBuilds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="Assests/Logowhite-nobg.png" alt="Logo">
+                <span class="company-name">ELITE <span class="highlight">BUILDS</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="build.html">Builds</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="parts.html" class="active">Parts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="parts-section">
+    <h2>Explore PC Parts</h2>
+
+    <div class="slider-container">
+        <button class="slider-btn left" onclick="slideLeft()">&#10094;</button>
+
+        <div class="parts-slider" id="partsSlider">
+
+            <div class="part-card">
+                <img src="Assests/cpu1.jpg" alt="CPU">
+                <h3>CPU</h3>
+            </div>
+
+            <div class="part-card">
+                <img src="Assests/gpu1.jpg"alt:GPU>
+                <h3>GPU</h3>
+            </div>
+
+            <div class="part-card">
+                <img src="Assests/ram1.jpg" alt="RAM">
+                <h3>RAM</h3>
+            </div>
+
+            <div class="part-card">
+                <img src="Assests/MB.jpg" alt="Motherboard">
+                <h3>Motherboard</h3>
+            </div>
+
+            <div class="part-card">
+                <img src="Assests/ssd1.png" alt="Storage">
+                <h3>Storage</h3>
+            </div>
+
+            <div class="part-card">
+                <img src="Assests/psu.png" alt="PSU">
+                <h3>PSU</h3>
+            </div>
+
+        </div>
+
+        <button class="slider-btn right" onclick="slideRight()">&#10095;</button>
+        </div>
+    </section>
+
+
+    <script>
+        
+    const slider = document.getElementById("partsSlider");
+
+    function slideLeft() {
+        slider.scrollBy({
+            left: -700,
+            behavior: "smooth"
+        });
+        }
+
+    function slideRight() {
+        slider.scrollBy({   
+            left: 700,
+            behavior: "smooth"
+        });
+        }
+
+    </script>
+</body>
+</html>

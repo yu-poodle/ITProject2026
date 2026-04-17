@@ -8,22 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-
-<body>
-
-    <body class="contact-page">
+<body class="contact-page">
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img src="Logowhite-nobg.png" alt="Logo">
+                <img src="Assests/Logowhite-nobg.png" alt="Logo">
                 <span class="company-name">ELITE <span class="highlight">BUILDS</span></span>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="build.html">Builds</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html" >Contacts</a></li>
+                <li><a href="contact.html">Contacts</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="parts.html">Parts</a></li>
             </ul>
         </div>
     </nav>
@@ -37,18 +35,12 @@
             <a href="#parts-section" class="btn-secondary">Shop Parts</a>
         </div>
     </div>
-
-    <div class="hero-page">
-        <span class="dot active" onclick="currentSlide(0)"></span>
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-    </div>
 </header>
 
 <section class="featured-build">
     <div class="container build-flex">
         <div class="build-image-container">
-            <img src="christian-wiediger-KV2vFOYItcY-unsplash.jpg" alt="High Quality PC Build" class="build-img">
+            <img src="Assests/christian-wiediger-KV2vFOYItcY-unsplash.jpg" alt="High Quality PC Build" class="build-img">
         </div>
 
         <div class="build-text">
@@ -74,7 +66,7 @@
         <div class="components-grid">
             <div class="component-card">
                 <div class="icon-box">
-                    <img src="CPU.png" alt="CPU">
+                    <img src="Assests/CPU.png" alt="CPU">
                 </div>
                 <h3>POWERFUL CPUS</h3>
                 <p>-Core i9 & Ryzen 9<br>-Unlocked for overclocking<br>-Advanced Thermal Design</p>
@@ -83,7 +75,7 @@
 
             <div class="component-card">
                 <div class="icon-box">
-                    <img src="GPU.png" alt="GPU">
+                    <img src="Assests/GPU.png" alt="GPU">
                 </div>
                 <h3>ELITE GPUS</h3>
                 <p>-RTX 40 & RX 7000 Series<br>-Maximize Gaming FPS<br>-Ray Tracing Ready</p>
@@ -92,7 +84,7 @@
 
             <div class="component-card">
                 <div class="icon-box">
-                    <img src="Ram.png" alt="RAM">
+                    <img src="Assests/Ram.png" alt="RAM">
                 </div>
                 <h3>POWERFUL RAM & CABLES</h3>
                 <p>-High Speed DDR5 Kit<br>-Custom Sleeved Extension</p>
@@ -101,7 +93,7 @@
 
             <div class="component-card">
                 <div class="icon-box">
-                    <img src="Storage.png" alt="Storage">
+                    <img src="Assests/Storage.png" alt="Storage">
                 </div>
                 <h3>BLAZING FAST STORAGE</h3>
                 <p>-High End NVME SSDs<br>-Uncompromised Read</p>
@@ -119,37 +111,5 @@
             <p>Email: pujjwal25@tbc.edu.np</p>
             <p>Phone: 9840028724</p>
         </div>
-
-
-
-<script>
-        const hero = document.getElementById('hero-slider');
-        const dots = document.querySelectorAll('.dot');
-
-        const images = [
-            'pc2.jpg',
-            'pc.jpg', 
-            'pc3.jpg' 
-        ];
-
-        let currentIndex = 0;
-
-        function updateSlider(index) {
-           
-            hero.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('${images[index]}')`;
-            dots.forEach(dot => dot.classList.remove('active'));
-            dots[index].classList.add('active');
-            
-            currentIndex = index;
-        }
-
-        function currentSlide(index) {
-            updateSlider(index);
-        }
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % images.length;
-            updateSlider(currentIndex);
-        }, 8000);
-    </script>
 </body>
 </html>
