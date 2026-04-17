@@ -125,6 +125,7 @@ body {
     border-radius: 5px;
     transition: 0.3s;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn-secondary {
@@ -136,7 +137,6 @@ body {
     font-weight: 700;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
     text-decoration: none;
 }
 
@@ -314,14 +314,6 @@ body {
     color: #000;
 }
 /* component section end */
-
-.footer-section {
-    color: #fff;
-    text-align: center;
-    background: #0d0f12;
-    padding: 40px 0;
-}
-
 .gallery-header {
     text-align: center;
     padding: 100px 20px 40px;
@@ -638,4 +630,100 @@ input:focus, select:focus, textarea:focus {
 
 .right {
     right: -20px;
+}
+
+
+.main-footer {
+    background: #08090a; 
+    border-top: 1px solid #1a1c20;
+    padding: 60px 0 20px;
+    margin-top: 80px; 
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr; 
+    gap: 40px;
+    padding: 0 40px;
+}
+
+.footer-col h4 {
+    color: #98FFED;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.footer-col p, .footer-col li {
+    color: #888;
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #888;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #98FFED;
+    padding-left: 5px; 
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #111;
+    margin-top: 40px;
+    padding-top: 20px;
+    font-size: 0.75rem;
+    color: #444;
+}
+/*This marks continuation of parts.html | table*/
+
+.specs-section {
+    padding: 60px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.table-wrapper {
+    border-radius: 12px;
+    border: 1px solid #222;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #0d0f12;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.specs-table th {
+    background: #1a1c20;
+    color: #98FFED;
+    padding: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.specs-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #1a1c20;
+}
+
+.specs-table tr:hover {
+    background: rgba(152, 255, 237, 0.05);
+    color: #fff;
+    transition: 0.2s;
 }
