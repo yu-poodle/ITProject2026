@@ -724,8 +724,8 @@ input:focus, select:focus, textarea:focus {
     border-bottom: 1px solid #1a1c20;
 }
 
-.specs-table tr:hover {
-    background: rgba(152, 255, 237, 0.05);
-    color: #fff;
-    transition: 0.2s;
+/*About page link additon */
+.about-content-box a{
+    text-decoration: none;
+    color: mediumaquamarine;
 }
